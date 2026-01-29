@@ -1,7 +1,7 @@
 let nameBook = prompt ("Nhập tên sách:");
 let borBook = prompt ("Nhập tên người mượn sách:");
 let statusBook = prompt ("Nhập tình trạng sách(có sẵn hay đã mượn, không có sẵn) :");
-let borDay = prompt ("Nhập số ngày mượn sách:");
+let borDay = +prompt ("Nhập số ngày mượn sách:");
 let carLib = prompt ("Bạn có thẻ thư viện không ? (có/không) :");
 if(statusBook === "có sẵn" && carLib === "có"){
     console.log("Chúc mừng, bạn có thể mượn sách này");
@@ -16,5 +16,6 @@ if(statusBook === "có sẵn" && carLib === "có"){
 }else{
     console.log("Thông tin không hợp lệ, vui lòng nhập lại");
 }
+
 
 
